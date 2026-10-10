@@ -1,10 +1,16 @@
-#TO check if a string is a palindrome or not 
+def is_palindrome(input_string):
+    # Two variables are initialized as string date types using empty 
+    # quotes: "reverse_string" to hold the "input_string" in reverse
+    # order and "new_string" to hold the "input_string" minus the 
+    # spaces between words, if any are found.
+    new_string = ""
+    reverse_string = ""
 
-s=input("Enter a string: ")
+    # Complete the for loop to iterate through each letter of the
+    # "input_string"
+…    return False
 
-s=s.lower().replace(" ","")  # Convert to lowercase and remove spaces   
 
-if s==s[::-1]:
-    print("The string is a palindrome.")    
-else:
-    print("The string is not a palindrome.")
+print(is_palindrome("Never Odd or Even")) # Should be True
+print(is_palindrome("abc")) # Should be False
+print(is_palindrome("kayak")) # Should be True
