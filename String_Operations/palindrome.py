@@ -8,7 +8,13 @@ def is_palindrome(input_string):
 
     # Complete the for loop to iterate through each letter of the
     # "input_string"
-…    return False
+    for letter in input_string:
+        if letter != " ":
+            new_string += letter
+            reverse_string = letter + reverse_string
+
+    # Check if the cleaned string is equal to its reverse
+    return new_string == reverse_string
 
 
 print(is_palindrome("Never Odd or Even")) # Should be True
